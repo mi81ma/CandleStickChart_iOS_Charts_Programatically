@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_CandleStickChart_iOS_Charts_Programatically : NSObject
+@end
+@implementation PodsDummy_Pods_CandleStickChart_iOS_Charts_Programatically
+@end

@@ -1,0 +1,6 @@
+framework module Pods_CandleStickChart_iOS_Charts_Programatically {
+  umbrella header "Pods-CandleStickChart_iOS_Charts_Programatically-umbrella.h"
+
+  export *
+  module * { export * }
+}
