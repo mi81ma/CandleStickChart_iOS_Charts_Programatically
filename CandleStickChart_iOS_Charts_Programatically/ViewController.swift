@@ -20,6 +20,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+
+
+    override func  viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
         // let rectView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         //
         //        rectView.backgroundColor = .blue
@@ -32,7 +38,9 @@ class ViewController: UIViewController {
         candleStickData = setGraph()
 
 
-        chart = CandleStickChartView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        chart = CandleStickChartView(frame: CGRect(x: 0, y: view.safeAreaInsets.bottom, width: view.frame.width, height: 500))
+
+        print(view.safeAreaInsets.top)
 
         chart.data = candleStickData
 
@@ -98,10 +106,6 @@ class ViewController: UIViewController {
     }
 
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
     func setGraph() -> CandleChartData
