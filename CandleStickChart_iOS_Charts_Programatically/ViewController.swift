@@ -31,10 +31,11 @@ class ViewController: UIViewController {
         //        rectView.backgroundColor = .blue
 
 
-        // CandleStick チャートをグラフに設定
+        // CandleStick Chart Instance
         var candleStickData = CandleChartData()
 
         //結合グラフに線グラフのデータ読み出し
+        //Data readout of line graph on connected graph
         candleStickData = setGraph()
 
 
@@ -50,15 +51,15 @@ class ViewController: UIViewController {
 
         //        // ***********************************************************************
         //
-        //        // グリッド線の色、太さ
+        //        // Grid line color, thickness
         //        ChartView.gridBackgroundColor = UIColor.red.withAlphaComponent(0.9)
         //        //        ChartView.xAxis =
-        //ç
-        //        // データがないときに表示する
+        //
+        //        // Display the bellow Text, when there is no output data
         //        ChartView.noDataText = "No chart data available."
         //
-        //        //データの表示
-        //        // タップでデータを選択できるか
+        //        // Display data action
+        //        // tap to select data is possibele or not
         //        ChartView.highlightPerTapEnabled = true
         //
         //        // Tap Zoom cancel
@@ -72,7 +73,7 @@ class ViewController: UIViewController {
         //        //        ChartView.chartDescription?.textAlign = NSTextAlignment.right
         //
         //
-        //        // X軸のラベルを下に配置
+        //        // Place X axis labels below
         //        ChartView.xAxis.labelPosition = .bottom
         //
         //        //
@@ -92,7 +93,7 @@ class ViewController: UIViewController {
         //
         //
         //
-        //        // 枠線のカラー&太さ
+        //        // Border color & thickness
         //        ChartView.drawBordersEnabled = false
         //        ChartView.borderLineWidth = 4
         //        ChartView.borderColor = UIColor.red
